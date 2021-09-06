@@ -1,0 +1,21 @@
+{
+  "name": "where-in-space",
+  "version": "1.0.0",
+  "description": "a js13k game",
+  "main": "compile.js",
+  "scripts": {
+    "watch": "nodemon -e js --exec npm run minify --ignore './*.min.js'",
+    "minify": "terser --compress --mangle -- ./game.js > ./game.min.js",
+    "squoosh": "squoosh-cli --oxipng '{quality:50}' -d img bg.png"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Imagineee-Games/js13k-2021.git"
+  },
+  "author": "Imagineee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Imagineee-Games/js13k-2021/issues"
+  },
+  "homepage": "https://github.com/Imagineee-Games/js13k-2021#readme"
+}
