@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "nodemon -e js --exec npm run minify --ignore './*.min.js'",
     "minify": "terser --compress --mangle -- ./game.js > ./game.min.js",
-    "squoosh": "squoosh-cli --oxipng '{quality:50}' -d img bg.png"
+    "squoosh": "squoosh-cli --oxipng '{quality:25}' -d ./ img/bg.png"
   },
   "repository": {
     "type": "git",
